@@ -23,6 +23,10 @@ enableRobotsTXT = true
     url = "/tags/"
     weight = 2
   [[menu.main]]
+    name = "分类"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
     name = "归档"
     url = "/archives/"
-    weight = 3
+    weight = 4
