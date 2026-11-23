@@ -86,9 +86,7 @@ tempCS ← N + CheckSum × 16 // 拼成一个8位索引(高4位CheckSum,低4位N
 2 / 7
 -->
 
-![page 2](/images/sent-crc/image-001.png)
 
-![page 2](/images/sent-crc/image-002.png)
 
 // 第①步：初始化种子
 
@@ -98,7 +96,6 @@ CheckSum ← N XOR crc4_table[CheckSum] // 第②步：每个nibble做一次"查
 
 1.4 官方算例，逐步演示
 
-![page 2](/images/sent-crc/image-003.png)
 
 <!-- page 3 -->
 
@@ -172,7 +169,6 @@ ID(4bit) + DataByte(8bit) + CRC(4bit) = 0101 00111100 0110
 4 / 7
 -->
 
-![page 4](/images/sent-crc/image-005.png)
 
 和16元素表，喂进去的数据变成：
 
@@ -180,7 +176,6 @@ ID(4bit) + DataByte(8bit) + CRC(4bit) = 0101 00111100 0110
 
 2.3 逐步算例
 
-![page 4](/images/sent-crc/image-006.png)
 
 第一步：拆成3个nibble
 
@@ -188,7 +183,6 @@ nibble1 = ID = 0101 = 5 nibble2 = DataByte高4位 = 0011 = 3 nibble3 = DataByte�
 
 第二步：套用第1.3节的算法
 
-![page 4](/images/sent-crc/image-007.png)
 
 <!-- page 5 -->
 
@@ -283,7 +277,6 @@ ID)→0→D15~D12(数据高4位)→0。
 7 / 7
 -->
 
-![page 7](/images/sent-crc/image-009.png)
 
 官方64项查表：
 
